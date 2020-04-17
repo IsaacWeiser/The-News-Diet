@@ -8,19 +8,51 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>The News Diet</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Page Specific Styling-->
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        text-align: left;
+        width: 100%
+      }
+      </style>
+      
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,21 +79,144 @@
 
   <!-- Page Content -->
   <div class="container">
+
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul>
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+        <!-- Post Content -->
+      <h1>The News Diet</h1>
+        <h5>Featured Story! COVID-19 Panic or Party?</h5>
+        <button type="button" class="collapsible">The Short Bite</button>
+          <div class="content">
+            <p>According to statements by both the CDC and WHO it seems that the Covid-19 virus is very dangerous and has a mortality rate of about 2%. Officials recommend self quarantining as much as possible and social distancing when you can't.</p>
+          </div>
+        <button type="button" class="collapsible">The Full Story</button>
+          <div class="content">
+            <p>Both the CDC and WHO released reports this Friday regarding the mortality rate of COVID-19. Both reports found the mortality rate globally to be 2% while certain areas of Italy reported rates as high as 9%. These reports had prompted Officials to recommend self quarantining as much as possible. Instituting stay at home orders in the United States and recommending social distancing to six feet between you and the next individual.</p>
+          </div>
+        <button type="button" class="collapsible">The Long Take: Event Analysis</button>
+          <div class="content">
+            <p>Both the CDC and WHO released reports this Friday regarding the mortality rate of COVID-19. Both reports found the mortality rate globally to be 2% while certain areas of Italy reported rates as high as 9%. These reports had prompted Officials to recommend self-quarantining as much as possible. Instituting stay at home orders in the United States and recommending social distancing to six feet between you and the next individual.
+
+ 
+
+              The total number of COVID-19 cases worldwide reaches 1,348,184.
+              
+              284,802 recovered
+              
+              74,816 deaths
+              
+               
+              
+              While part of the world such as Italy and China begin to see steady decline in COVID-19 cases, the United States enters it “Peak Week” according to CDC and recommends all citizens to stay inside more than ever this week to decrease the peak as much as possible. New York alone reports its largest single-day jump in death toll. Many states have instituted a Stay a Home Order, which closes all non-essential businesses and establishments. Residents are only to leave their homes for groceries, walks, bike rides, and other small essential tasks.
+              
+               
+              
+              Forty three out of fifty states have instituted some sort of stay at home order. Here are the seven who haven’t:</p>
+            <ul>
+              <li>Arkansas</li>
+              <li>Iowa</li>
+              <li>Nebraska</li>
+              <li>North Dakota</li>
+              <li>South Dakota</li>
+              <li>Utah</li>
+              <li>Wyoming</li>
+            </ul>
+            </div>
+
+
+        <!-- Comment with nested comments -->
       </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Current Events</a>
+                  </li>
+                  <li>
+                    <a href="#">Politics</a>
+                  </li>
+                  <li>
+                    <a href="#">Sports</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Business</a>
+                  </li>
+                  <li>
+                    <a href="#">Local</a>
+                  </li>
+                  <li>
+                    <a href="#">Technology</a>
+                  </li>
+                  <li>
+                    <a href="#">International</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Featured Stories</h5>
+          <div class="card-body">
+          <img src="img\gloves.png">
+          <p>Gloves: Are They Safe?</p>
+          <img src="img\kids.png">
+          <p>Children: Human? Yes</p>
+          <img src="img\sheep.png">
+          <p>Sheep: animals or people?</p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
+    <!-- /.row -->
+
   </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; The News Diet 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Collapsible JavaScript-->
+    <script src="vendor/bootstrap/js/collapsible.js"></script>
 
 </body>
 
