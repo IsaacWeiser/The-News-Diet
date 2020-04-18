@@ -85,16 +85,20 @@
       <!-- Post Content Column -->
       <div class="col-lg-8">
         <!-- Post Content -->
-      <h1>The News Diet</h1>
+      <h1 style="float:left;border-bottom:solid red 3px;">The News Diet</h1>
+	  <img src="img/logo.png" style="height:51px;Width:45px;border-bottom:solid red 3px;">
+		<br></br>
         <h5>Featured Story! COVID-19 Panic or Party?</h5>
         <button type="button" class="collapsible">The Short Bite</button>
           <div class="content">
             <p>According to statements by both the CDC and WHO it seems that the Covid-19 virus is very dangerous and has a mortality rate of about 2%. Officials recommend self quarantining as much as possible and social distancing when you can't.</p>
+			<img src="img/seal.png" style="height:50px;width:50px;float:right;">
           </div>
         <button type="button" class="collapsible">The Full Story</button>
           <div class="content">
             <p>Both the CDC and WHO released reports this Friday regarding the mortality rate of COVID-19. Both reports found the mortality rate globally to be 2% while certain areas of Italy reported rates as high as 9%. These reports had prompted Officials to recommend self quarantining as much as possible. Instituting stay at home orders in the United States and recommending social distancing to six feet between you and the next individual.</p>
-          </div>
+            <img src="img/seal.png" style="height:50px;width:50px;float:right;">
+		  </div>
         <button type="button" class="collapsible">The Long Take: Event Analysis</button>
           <div class="content">
             <p>Both the CDC and WHO released reports this Friday regarding the mortality rate of COVID-19. Both reports found the mortality rate globally to be 2% while certain areas of Italy reported rates as high as 9%. These reports had prompted Officials to recommend self-quarantining as much as possible. Instituting stay at home orders in the United States and recommending social distancing to six feet between you and the next individual.
@@ -123,7 +127,62 @@
               <li>Utah</li>
               <li>Wyoming</li>
             </ul>
+			<img src="img/seal.png" style="height:50px;width:50px;float:right;">
             </div>
+		<button type="button" class="collapsible">Opinion</button>
+          <div class="content">
+			<div id="hector opinion" style="margin:auto;width:150px;float:left;">
+			   <a href="hectorOpinion.html"><img src="img/hector.jpg" style="width:100px;height:100px;"></a> 	
+			   <a href="hectorOpinion.html"><p>Hector's Opinion</p></a>
+			</div> 
+			<div id="conservative opinion" style="margin:auto;width:150px;float:left;padding-left:85px;">
+			   <a href="https://www.foxnews.com/health/coronavirus-everything-you-need-to-know"><img src="img/redtie.jpg" style="width:100px;height:100px;">
+			   <p>Conservative opinion</p></a>
+			</div>
+			<div id="liberal opinion" style="margin:auto;width:150px;float:left;padding-left:170px;">
+			   <a href="https://www.cnn.com/2020/01/20/health/what-is-coronavirus-explained/index.html"><img src="img/bluetie.jpg" style="width:100px;height:100px;">
+			   <p>Liberal opinion</p></a>
+			</div>  
+			<div id="progressive opinion" style="margin:auto;width:150px;float:left;">	
+			   <a href="https://www.huffpost.com/entry/coronavirus-covid-19-latest-live-updates_n_5e970747c5b6ead14005b1c4"><img src="img/greentie.jpg" style="width:100px;height:100px;">
+			   <p>Progressive opinion</p></a>
+			</div>
+			<div id="moderate opinion" style="margin:auto;width:150px;padding-left:32px;">
+			   <a href=""><img src="img/purpletie.jpg" style="width:100px;height:100px;">
+			   <p>Moderate opinion</p></a>
+			</div>  
+            <img src="img/seal.png" style="height:50px;width:50px;float:right;">			
+          </div>
+		<button type="button" class="collapsible">Feedback</button>
+				  <div class="content">
+				  <div id="rating system" style="margin:auto;width:350px;">
+				  <p>Please rate this story out of 5</p>
+				  <div>
+				  <p style="float:left;">1 star  </p>
+				  </div>
+					<div id="rate" style="float:left;margin-left:2px;">
+					 <input type="radio" name="ratingquality" value="1"> 
+					 <input type="radio" name="ratingquality" value="2"> 
+					 <input type="radio" name="ratingquality" value="3"> 
+					 <input type="radio" name="ratingquality" value="4"> 
+					 <input type="radio" name="ratingquality" value="5"> 
+					 </div>
+					 <div>
+					 <p style="float:left;">  5 stars</p>
+					 </div>
+					 </div>
+					 <br></br> 
+				  <div id="comment section" style="margin:auto;width:350px;">
+					<h2>Comments</h2>
+					<p>Please leave your feedback</p>
+					<form action="/action_page.php">
+					  <textarea name="message" rows="10" cols="30">Leave your review of this story here</textarea>
+					  <br><br>
+					  <input type="submit">
+					</form>
+				    <img src="img/seal.png" style="height:50px;width:50px;float:right;">
+					</div>
+				  </div>		  
 
 
         <!-- Comment with nested comments -->
@@ -203,6 +262,20 @@
 
   </div>
   <!-- /.container -->
+  
+  <!-- author section -->
+  <div id="author" style="width:48.5%;margin:auto;padding-bottom:5px;background-color:#555;border:3px solid #555;">
+	<img src="img/hector.jpg" width ="170" height ="170" style="float:left">
+	<h2> Hector Ramirez </h2>
+	<img src ="img/star.png" height= "50" width = "50">
+	<img src ="img/star.png" height= "50" width = "50">
+	<img src ="img/star.png" height= "50" width = "50">
+	<img src ="img/star.png" height= "50" width = "50">
+	<img src ="img/half-star.png" height ="50" width ="50">
+	<h5> 4 out 5 stars </h5>
+	<a href="reviews.html"><p> (Based on 143 reviews) </p></a>
+	
+  </div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
