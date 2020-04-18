@@ -16,6 +16,7 @@ For our site to create a news serivce that increased news comprehension and unde
 ---------------------------------------
 ## First Prototype
 ![First Prototype Image](readme/images/firstprototype.png)
+
 Prototype Capabilities:
 - Show name of site and logo
 - Show news categories
